@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="LoadData:jar">
+    <output-path>$PROJECT_DIR$/</output-path>
+    <root id="archive" name="LoadData.jar">
+      <element id="module-output" name="LoadData" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../commons-beanutils-1.8.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../commons-collections-3.2.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../commons-lang-2.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../commons-logging-1.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../ezmorph-1.0.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../json-lib-2.3-jdk15.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/LoadData.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

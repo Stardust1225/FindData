@@ -30,8 +30,8 @@ public class Internet implements Callable<String> {
                 Proxy proxy = new Proxy(Proxy.Type.HTTP, addr); // http 代理
 
                 URL url = new URL(baseUrl + (addToken ? CommitInfo.token.get(Internet.getCount()) : ""));
-                connection = (HttpURLConnection) url.openConnection(proxy);
-//                connection = (HttpURLConnection) url.openConnection();
+                // connection = (HttpURLConnection) url.openConnection(proxy);
+                connection = (HttpURLConnection) url.openConnection();
                 connection.setReadTimeout(2 * 60 * 1000);
                 connection.setConnectTimeout(2 * 60 * 1000);
 
