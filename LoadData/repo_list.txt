@@ -1,0 +1,10 @@
+python/cpython
+NVIDIA/tensorflow
+matplotlib/matplotlib
+numpy/numpy
+python-pillow/Pillow
+tensorflow/tensorflow
+scipy/scipy
+numpy/numpy
+pytorch/pytorch
+numba/numba
