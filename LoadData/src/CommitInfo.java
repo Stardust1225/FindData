@@ -63,7 +63,7 @@ public class CommitInfo {
 
             JSONArray lastPageCommits = new JSONArray();
             while (true) {
-                JSONArray commits = JSONArray.fromObject(new Internet(baseUrl + page + "&").call());
+                JSONArray commits = JSONArray.fromObject(new Internet(baseUrl + page, false).call());
                 if (commits.size() <= 0)
                     break;
                 if (page % 100 == 0)
@@ -118,7 +118,7 @@ public class CommitInfo {
 
         @Override
         public ArrayList<String> call() throws Exception {
-            JSONObject commit = JSONObject.fromObject(new Internet(url + "?").call());
+            JSONObject commit = JSONObject.fromObject(new Internet(url, false).call());
             JSONArray files = commit.getJSONArray("files");
             ArrayList<String> strings = new ArrayList<>();
 
